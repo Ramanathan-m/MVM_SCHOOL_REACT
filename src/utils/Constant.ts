@@ -173,6 +173,18 @@ export const Quotation="Quotation"
 export const Active="Active"
 export const InActive="InActive"
 
+// tabledataforraise/viewrequest
+export const Chetpet="Chetpet"
+export const Department="Transport"
+export const Budget="5,000"
+export const DueDate="12-07-2024"
+export const TypeOfRequest="Bus tyre Change"
+export const VRPriority="Medium"
+export const Image="Image"
+export const VRDescription="In order to ensure the safety and reliability of school transportation, it is essential to establish clear guidelines for the selection and maintenance of tires used in school vehicles.Bus no:6656 Need to change the tyre. "
+export const VRStatus="Waiting For Commite Approval"
+
+
 
 
 

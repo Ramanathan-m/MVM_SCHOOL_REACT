@@ -1,10 +1,10 @@
 import React from 'react'
-import NewRequestViewCard from '../../../Component/ApprovalRequest/NewRequest/NewRequest/NewRequestViewCard'
+import NewRequestView from '../../../Component/ApprovalRequest/NewRequest/NewRequest/NewRequestViewCard/NewRequestView'
 
 const NewRequestViewPage = () => {
   return (
     <div className='page-body'>
-      <NewRequestViewCard/>
+      <NewRequestView/>
     </div>
   )
 }

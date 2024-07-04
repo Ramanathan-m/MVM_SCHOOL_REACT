@@ -4,19 +4,17 @@ export interface TableActionType {
   
   export interface NewRequestConfigurationTableColumnsType {
     id: number;
-    schoolName:string;
+    school:string;
     departments:string;
     approximateBudget:string;
     typeOfRequest:string;
     date: string;
     priority:string;
     images:string; 
-    tags:string;
     status:string;
-    lastupdated:string;
     action: string;
   }
-  export interface NewRequestTableTableProduct {
+  export interface NewRequestTableProduct {
     images?: string;
   }
 

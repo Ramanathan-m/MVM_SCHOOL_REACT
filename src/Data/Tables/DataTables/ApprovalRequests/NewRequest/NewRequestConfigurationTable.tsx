@@ -8,7 +8,7 @@ import NewRequestListHeadContainer from '../../../../../Component/ApprovalReques
 const NewRequestConfigurationTable = () => {
   const [filterText, setFilterText] = useState("");
 
-  const filteredItems = NewRequestTableData.filter((item) => item.schoolName && item.schoolName.toLowerCase().includes(filterText.toLowerCase()));
+  const filteredItems = NewRequestTableData.filter((item) => item.school && item.school.toLowerCase().includes(filterText.toLowerCase()));
   const subHeaderComponentMemo = useMemo(() => {
     return (
       <div id="basic-1_filter" className="dataTables_filter d-flex align-items-between">

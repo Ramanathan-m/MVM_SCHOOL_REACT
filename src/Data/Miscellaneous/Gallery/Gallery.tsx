@@ -13,6 +13,13 @@ export const galleryGridImages = [
   "big-lightgallry/012.jpg",
 ];
 
+export const newRequestImages = [
+  "other-images/tyre-img.jpg",
+  "other-images/tyre-img-1.jpeg",
+  "other-images/tyre-img-2.jpeg",
+
+];
+
 export const masonryImageData = [
   {
     id: 1,

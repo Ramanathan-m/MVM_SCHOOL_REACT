@@ -1,69 +1,65 @@
 import { Link } from "react-router-dom";
-import { LI, P, UL } from "../../../../../AbstractElements";
+import { Image, UL } from "../../../../../AbstractElements";
 import { Href } from "../../../../../utils/Constant";
-import { TableActionType, NewRequestConfigurationTableColumnsType } from "../../../../../Types/ApprovalRequest/Request";
+import { TableActionType, NewRequestConfigurationTableColumnsType , NewRequestTableProduct } from "../../../../../Types/ApprovalRequest/Request";
 import { dynamicImage } from "../../../../../Service";
-import { ProductListTableProduct } from "../../../../../Types/Application/Ecommerce/Ecommerce";
+import { TableColumn } from "react-data-table-component";
 
 
 export const NewRequestTableData = [
   {
     id: 1,
-    schoolName: "chetpet",
+    school: "chetpet",
     departments: "Transport ",
-    approximateBudget: "Basic",
+    approximateBudget: "5,000",
     typeOfRequest: " Change Tire",
     date: "15/05/2024 ",
     priority: " Medium",
     requestedBy: "Venkat ",
-    images: "ecommerce/product-categories/laptop.png ",
+    images: "other-images/tyre-img.jpg",
     tags: "Bus Spare Parts",
     status: "Open",
-    lastupdated: "AO",
     action: "test ",
   },
   {
     id: 2,
-    schoolName: "chetpet",
+    school: "Trichy",
     departments: "Transport ",
-    approximateBudget: "Basic",
+    approximateBudget: "45,000",
     typeOfRequest: " Tyre",
     date: "1/07/2024 ",
     priority: " Medium",
-    images: "image ",
+    images: "other-images/desktop-img.jpeg",
     tags: "Bus Spare Parts",
     status: "Open",
-    lastupdated: "AO",
     action: "test ",
   },
 
   {
     id: 3,
-    schoolName: "chetpet",
+    school: "Kumbakonam",
     departments: "IT",
-    approximateBudget: "Intermediate ",
+    approximateBudget: "40,000",
     typeOfRequest: "Computer",
     date: "29/07/2024 ",
     priority: " Medium",
-    images: "image ",
+    images: "other-images/projector-img.jpeg",
     tags: "Computer",
     status: "Open",
-    lastupdated: "Committee member 1",
     action: "test ",
   },
 
   {
     id: 4,
-    schoolName: "chetpet",
+    school: "Polachery",
     departments: "Pet",
-    approximateBudget: "Intermediate ",
+    approximateBudget: "4,00,0000 ",
     typeOfRequest: "Sports shoe",
     date: "30/07/2024 ",
     priority: " Medium",
-    images: "image ",
+    images: "other-images/bus-img.jpeg",
     tags: "Sports shoe",
     status: "Open",
-    lastupdated: "AO",
     action: "test ",
   },
 ];
@@ -92,60 +88,58 @@ const Tableaction = ({ id }: TableActionType) => {
 
 };
 
-export const NewRequestConfigurationColumn = [
+const NewRequestTableImage :React.FC<NewRequestTableProduct> = ({ images }) => {
+  return (
+    <div className="light-product-box">
+    <Image className="img-fluid align-self-center img-fluid img-50" src={dynamicImage(images)} alt="laptop" />
+  </div>
+  );
+};
+
+export const NewRequestConfigurationColumn:TableColumn<NewRequestConfigurationTableColumnsType>[] = [
   {
-    name: "School Name",
-    selector: (row: NewRequestConfigurationTableColumnsType) => row["schoolName"],
+    name: "School",
+    selector: (row) => `${row.school}`,
     sortable: true,
   },
   {
     name: "Departments",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.departments}`,
+    selector: (row) => `${row.departments}`,
     sortable: true,
   },
   {
     name: "Budget",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.approximateBudget}`,
+    selector: (row) => `${row.approximateBudget}`,
     sortable: true,
   },
   {
     name: "Type Of Requests",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.typeOfRequest}`,
+    selector: (row) => `${row.typeOfRequest}`,
     sortable: true,
   },
   {
     name: "Due Date",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.date}`,
+    selector: (row) => `${row.date}`,
     sortable: true,
   },
   {
     name: "Priority",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.priority}`,
+    selector: (row) => `${row.priority}`,
     sortable: true,
   },
   {
     name: "Image",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.images}`,
-    sortable: true,
-  },
-  {
-    name: "Tags",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.tags}`,
+    cell: (row) => <NewRequestTableImage images={row.images}/>,
     sortable: true,
   },
   {
     name: "Status",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.status}`,
-    sortable: true,
-  },
-  {
-    name: "Last Updated",
-    selector: (row: NewRequestConfigurationTableColumnsType) => `${row.lastupdated}`,
+    selector: (row) => `${row.status}`,
     sortable: true,
   },
   {
     name: "Action",
-    cell: (row: NewRequestConfigurationTableColumnsType) => <Tableaction id={row.action} />,
+    cell: (row) => <Tableaction id={row.action} />,
     sortable: true,
   },
 ];
