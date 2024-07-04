@@ -79,8 +79,8 @@ const Tableaction = ({ id }: TableActionType) => {
         </Link>
       </div>
       <div className="delete">
-        <Link to={Href}>
-          <i className="icon-trash" />
+      <Link to={`${process.env.PUBLIC_URL}/approvalrequest/viewrequest1`}>
+      <i className="icon-trash" />
         </Link>
       </div>
     </UL>

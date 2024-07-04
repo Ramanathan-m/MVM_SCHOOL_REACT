@@ -274,3 +274,61 @@ export const daysJob: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "
 export const monthsJob: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 export const yearsJob: string[] = ["1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"];
+
+export const ApprovalRequest1data  = [
+  {
+    id: 1,
+    name: "Shankar",
+    designation: "Principal",
+    logo:"user/user.png",
+    badgeType: "success",
+    badgeValue: "Approved",
+    approvedOn: "12-05-2024 5:43 PM",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    ribbon: false,
+  },
+  {
+    id: 2,
+    name: "Hariharan",
+    designation: "AO",
+    logo:"user/user.png",
+    badgeType: "warning",
+    badgeValue: "Pending",
+    approvedOn: "13-05-2024 4:23 PM",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    ribbon: false,
+  },
+  {
+    id: 3,
+    name: "Vijay",
+    designation: "CM",
+    logo:"user/user.png",
+    badgeType: "info",
+    badgeValue: "Hold",
+    approvedOn: "12-05-2024 7:43 PM",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    ribbon: false,
+  },
+  {
+    id: 4,
+    name: "Rahul",
+    designation: "Principal",
+    logo:"user/user.png",
+    badgeType: "success",
+    badgeValue: "Approved",
+    approvedOn: "12-05-2024 5:20 PM",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    ribbon: false,
+  },
+  {
+    id: 5,
+    name: "Suresh",
+    designation: "AO",
+    logo:"user/user.png",
+    badgeType: "danger",
+    badgeValue: "Pending",
+    approvedOn: "12-05-2024 5:43 PM",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    ribbon: false,
+  },
+]

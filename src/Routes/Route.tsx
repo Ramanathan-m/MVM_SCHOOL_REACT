@@ -147,6 +147,7 @@ import SchoolEdit from '../Pages/Masters/Schools/SchoolEdit'
 import SchoolViewCardPage from '../Pages/Masters/Schools/SchoolViewCardPage'
 import DepartmentViewCardPage from '../Pages/Masters/Departments/DepartmentViewCard'
 import DepartrmentEditPage from '../Pages/Masters/Departments/DepartrmentEdit'
+import NewRequestViewPage1 from '../Pages/ApprovalRequests/NewRequest/NewRequestViewPage1'
 
 
 const Routes = [
@@ -182,6 +183,7 @@ const Routes = [
     { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequests`, Component: <CancelledRequestsContainer />},
     
     { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequest`, Component: <NewRequestViewPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequest1`, Component: <NewRequestViewPage1 />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/createnewrequest`, Component: <NewRequestCreate />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/editnewrequest`, Component: <NewRequestEdit />},
 
