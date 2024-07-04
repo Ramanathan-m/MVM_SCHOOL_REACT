@@ -142,6 +142,11 @@ import LinkCreate from '../Pages/Masters/Links/LinkCreate'
 import UserCreate from '../Pages/User/UserCreate'
 import NewRequestViewPage from '../Pages/ApprovalRequests/NewRequest/NewRequestViewPage'
 import NewRequestCreate from '../Pages/ApprovalRequests/NewRequest/NewRequestCreate'
+import NewRequestEdit from '../Pages/ApprovalRequests/NewRequest/NewRequestEdit'
+import SchoolEdit from '../Pages/Masters/Schools/SchoolEdit'
+import SchoolViewCardPage from '../Pages/Masters/Schools/SchoolViewCardPage'
+import DepartmentViewCardPage from '../Pages/Masters/Departments/DepartmentViewCard'
+import DepartrmentEditPage from '../Pages/Masters/Departments/DepartrmentEdit'
 
 
 const Routes = [
@@ -151,15 +156,24 @@ const Routes = [
 
 
     // Masters
+    // school
     { path: `${process.env.PUBLIC_URL}/masters/schools`, Component: <Schools />},
-    { path: `${process.env.PUBLIC_URL}/masters/departments`, Component: <Departments />},
-    { path: `${process.env.PUBLIC_URL}/masters/vendors`, Component: <Vendors />},
-    { path: `${process.env.PUBLIC_URL}/masters/links`, Component: <Links />},
-    { path: `${process.env.PUBLIC_URL}/masters/tags`, Component: <Tags />},
     { path: `${process.env.PUBLIC_URL}/masters/school/createnew`, Component: <SchoolCreate />},
+    { path: `${process.env.PUBLIC_URL}/masters/school/editschool`, Component: <SchoolEdit />},
+    { path: `${process.env.PUBLIC_URL}/masters/school/viewschool`, Component: <SchoolViewCardPage />},
+    // Department
+    { path: `${process.env.PUBLIC_URL}/masters/departments`, Component: <Departments />},
     { path: `${process.env.PUBLIC_URL}/masters/department/createnewdepartment`, Component: <DepartmentCreate />},
+    { path: `${process.env.PUBLIC_URL}/masters/department/editdepartment`, Component: <DepartrmentEditPage />},
+    { path: `${process.env.PUBLIC_URL}/masters/department/viewdepartment`, Component: <DepartmentViewCardPage />},
+    // vendor
+    { path: `${process.env.PUBLIC_URL}/masters/vendors`, Component: <Vendors />},
     { path: `${process.env.PUBLIC_URL}/masters/vendor/createnewVendors`, Component: <VendorCreate />},
+
+    { path: `${process.env.PUBLIC_URL}/masters/tags`, Component: <Tags />},
+    { path: `${process.env.PUBLIC_URL}/masters/links`, Component: <Links />},
     { path: `${process.env.PUBLIC_URL}/masters/link/createnewlink`, Component: <LinkCreate />},
+
 
     // ApprovalRequest
     { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, Component: <NewRequestContainer/>},
@@ -169,6 +183,8 @@ const Routes = [
     
     { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequest`, Component: <NewRequestViewPage />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/createnewrequest`, Component: <NewRequestCreate />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/editnewrequest`, Component: <NewRequestEdit />},
+
 
 
     // otherpages

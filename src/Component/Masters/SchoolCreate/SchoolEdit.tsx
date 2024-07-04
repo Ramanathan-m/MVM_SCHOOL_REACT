@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container, Row, Col, Card, CardBody } from 'reactstrap'
-import Breadcrumbs from '../../../../CommonElements/Breadcrumbs/Breadcrumbs'
-import { ProjectCreates, Project } from '../../../../utils/Constant'
-import CreateNewRequestForm from './CreateNewRequestForm'
+import Breadcrumbs from '../../../CommonElements/Breadcrumbs/Breadcrumbs'
+import { ProjectCreates, Project } from '../../../utils/Constant'
+import EditNewSchoolForm from './EditNewSchoolForm'
 
-const NewRequestCreateContainer = () => {
+const SchoolEditContainer = () => {
   return (
     <>
       <Breadcrumbs mainTitle={ProjectCreates} parent={Project} />
@@ -13,14 +13,14 @@ const NewRequestCreateContainer = () => {
           <Col sm="12">
             <Card>
               <CardBody>
-                <CreateNewRequestForm />
+                <EditNewSchoolForm />
               </CardBody>
             </Card>
           </Col>
         </Row>
       </Container>
-    </> 
-     )
+    </>
+  )
 }
 
-export default NewRequestCreateContainer
+export default SchoolEditContainer

@@ -1,28 +1,15 @@
 import React from 'react'
 import { Form, Row, Col, FormGroup, Input, Label} from 'reactstrap'
-import {RaiseRequestImage, RaiserequestsApproximateBudget, RaiseRequestDate, RaiseRequestDescription, RaiseRequestRequestId, RaiserequestAdvance, RaiserequestRequest, Raiserequestintermediate, RaiserequestsBasic, RaiserequestsHigh, RaiserequestsLow, RaiserequestsMedium, selectschool, RaiserequestsPriority, Tags, Add, ViewForm } from '../../../../utils/Constant'
+import {RaiseRequestImage, RaiserequestsApproximateBudget, RaiseRequestDate, RaiseRequestDescription, RaiseRequestRequestId, RaiserequestAdvance, RaiserequestRequest, Raiserequestintermediate, RaiserequestsBasic, RaiserequestsHigh, RaiserequestsLow, RaiserequestsMedium, selectschool, RaiserequestsPriority, Tags, Add, ViewForm, MDepartments } from '../../../../utils/Constant'
 import NewRequestButtonSection from './NewRequestButtonSection'
-import {LinkDropdown } from '../../../../Data/Forms/FormsControl/BaseInput/BaseInput'
+import {LinkDropdown, departmentdropdown } from '../../../../Data/Forms/FormsControl/BaseInput/BaseInput'
 import NewRequestMultiSelector from './NewRequestMultiSelector'
-import { Btn } from '../../../../AbstractElements'
-import { Link } from 'react-router-dom'
 
 const CreateNewRequestForm = () => {
   return (
     <Form className="theme-form">
       <Row>
         <Col md="8 offset-md-1">
-        <FormGroup>
-            <Row>
-              <Col sm="">
-              </Col>
-              <Col classname="">
-              <Link to={`${process.env.PUBLIC_URL}/approvalrequest/newrequests`}>
-                <Btn color="primary" className="me-3 offset-sm-5">{ViewForm}</Btn>
-              </Link>
-              </Col>
-            </Row>
-          </FormGroup>
           <FormGroup>
             <Row>
               <Col sm="4">
@@ -36,16 +23,16 @@ const CreateNewRequestForm = () => {
           <FormGroup>
             <Row>
               <Col sm="4">
-                <Label>{selectschool}</Label>
+                <Label>{MDepartments}</Label>
               </Col>
               <Col sm="8">
                 <Input type='select' className="input-air-primary digits" defaultValue={"Select School"}>
-                  {LinkDropdown.map((data, index) => (<option key={index}>{data}</option>))}
+                  {departmentdropdown.map((data, index) => (<option key={index}>{data}</option>))}
                 </Input>
               </Col>
             </Row>
           </FormGroup>
-          <FormGroup className="d-flex gap-3 checkbox-checked">
+          {/* <FormGroup className="d-flex gap-3 checkbox-checked">
             <Col sm="4">
               <Label> {RaiserequestsApproximateBudget} </Label>
             </Col>
@@ -63,6 +50,16 @@ const CreateNewRequestForm = () => {
                 <Label className="form-check-label mb-0" for='RaiserequestAdvance'>{RaiserequestAdvance}</Label>
               </FormGroup>
             </Col>
+          </FormGroup> */}
+          <FormGroup>
+            <Row>
+              <Col sm="4">
+                <Label>{RaiserequestsApproximateBudget}</Label>
+              </Col>
+              <Col sm="8">
+                <Input type="text" className="form-control" />
+              </Col>
+            </Row>
           </FormGroup>
           <FormGroup>
             <Row>
@@ -80,7 +77,7 @@ const CreateNewRequestForm = () => {
                 <Label>{RaiseRequestDescription}</Label>
               </Col>
               <Col sm="8">
-                <Input type="text" className="form-control" />
+                <Input type="textarea" className="form-control" />
               </Col>
             </Row>
           </FormGroup>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Card, CardBody, Col, Container, Row } from 'reactstrap';
+import { Card, CardBody, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import Breadcrumbs from '../../../../CommonElements/Breadcrumbs/Breadcrumbs';
-import { OProfile, PName, PEmailId, PMobileNumber, PUserName, Href, PChangePassword, ViewForm, Approve, Hold, ViewCardCancel } from '../../../../utils/Constant';
-import { Btn, LI, UL } from '../../../../AbstractElements';
+import { UL, LI, Btn } from '../../../AbstractElements';
+import Breadcrumbs from '../../../CommonElements/Breadcrumbs/Breadcrumbs';
+import { OProfile, PName, PEmailId, PMobileNumber, PUserName, Href, Approve, Hold, ViewCardCancel } from '../../../utils/Constant';
 
-const NewRequestViewCard = () => {
+const SchoolViewCardContainer = () => {
     return (
         <>
           <Breadcrumbs mainTitle={OProfile} parent={OProfile} />
@@ -86,4 +86,4 @@ const NewRequestViewCard = () => {
       );
 }
 
-export default NewRequestViewCard
+export default SchoolViewCardContainer

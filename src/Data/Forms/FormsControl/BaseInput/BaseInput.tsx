@@ -123,5 +123,5 @@ export const raiseInputStyleSubTitle = [
   ];
 
  export const colorList = ["Red", "Yellow", "Orange", "White", "Black", "Gray ", "Brown", "Purple ", "White"]
- export const dropdownschoolname=["Select School","Avadi","Tiruvallur","T.Nagar","Anna Salai"]
+ export const departmentdropdown=["Select Department","IT","Transport","Admin"]
  export const LinkDropdown=["Chetpet","Kumbakonam","Avadi","Polachery","MIRS","Irrungatukottai","Tenkasi","Trichy"]

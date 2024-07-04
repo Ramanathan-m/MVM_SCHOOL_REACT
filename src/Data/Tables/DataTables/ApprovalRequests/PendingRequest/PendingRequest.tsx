@@ -57,17 +57,22 @@ export const PendingRequestTableData = [
 const Tableaction = ({ id }: TableActionType) => {
   return (
     <UL className="action simple-list flex-row" id={id}>
-      <LI className="edit">
+    <div className="view">
         <Link to={Href}>
-          <i className="icon-pencil-alt" />
-        </Link>
-      </LI>
-      <LI className="delete">
-        <Link to={Href}>
-          <i className="icon-trash" />
-        </Link>
-      </LI>
-    </UL>
+        <i className="fa fa-eye"></i>
+      </Link>
+    </div>
+    <div className="edit">
+      <Link to={Href}>
+        <i className="icon-pencil-alt" />
+      </Link>
+    </div>
+    <div className="delete">
+      <Link to={Href}>
+        <i className="icon-trash" />
+      </Link>
+    </div>
+  </UL>
   );
 };
 
@@ -93,7 +98,7 @@ export const PendingRequestConfigurationColumn = [
     sortable: true,
   },
   {
-    name: "action",
+    name: "Action",
     cell: (row: PendingRequestConfigurationTableColumnsType) => <Tableaction id={row.action} />,
     sortable: true,
   },

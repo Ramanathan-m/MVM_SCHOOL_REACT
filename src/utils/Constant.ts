@@ -96,6 +96,7 @@ export const Logo = "Logo";
 export const School = "School";
 export const CreateNew = "Create New";
 
+
 // approvalrequest
 export const ApprovalRequest = "Approval Requests";
 export const ANewRequests = "New Requests";
@@ -146,7 +147,7 @@ export const SearchSchool="School"
 
 // Raise Request 
 export const RaiseRequestRequestId="Request Id";
-export const RaiserequestRequest="Request"
+export const RaiserequestRequest="Type of Request"
 export const RaiseRequestDescription="Description"
 export const RaiseRequestDate="Due Date"
 export const RaiseRequestTags="tag"

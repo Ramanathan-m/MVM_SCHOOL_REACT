@@ -19,16 +19,21 @@ export const LinksTableData = [
   const TableAction = ({ id }: TableActionType) => {
     return (
       <UL className="action simple-list flex-row" id={id}>
-        <LI className="edit">
-          <Link to={Href}>
-            <i className="icon-pencil-alt" />
-          </Link>
-        </LI>
-        <LI className="delete">
-          <Link to={Href}>
-            <i className="icon-trash" />
-          </Link>
-        </LI>
+ <div className="view">
+        <Link to={Href}>
+          <i className="fa fa-eye"></i>
+        </Link>
+      </div>
+      <div className="edit">
+        <Link to={Href}>
+          <i className="icon-pencil-alt" />
+        </Link>
+      </div>
+      <div className="delete">
+        <Link to={Href}>
+          <i className="icon-trash" />
+        </Link>
+      </div>
       </UL>
     );
   };
