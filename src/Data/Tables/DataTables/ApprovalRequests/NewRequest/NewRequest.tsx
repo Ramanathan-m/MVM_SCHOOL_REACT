@@ -9,7 +9,7 @@ import { ProductListTableProduct } from "../../../../../Types/Application/Ecomme
 export const NewRequestTableData = [
   {
     id: 1,
-    requestId: "RID-001",
+    schoolName: "chetpet",
     departments: "Transport ",
     approximateBudget: "Basic",
     typeOfRequest: " Change Tire",
@@ -24,7 +24,7 @@ export const NewRequestTableData = [
   },
   {
     id: 2,
-    requestId: "RID-001",
+    schoolName: "chetpet",
     departments: "Transport ",
     approximateBudget: "Basic",
     typeOfRequest: " Tyre",
@@ -39,7 +39,7 @@ export const NewRequestTableData = [
 
   {
     id: 3,
-    requestId: "RID-002",
+    schoolName: "chetpet",
     departments: "IT",
     approximateBudget: "Intermediate ",
     typeOfRequest: "Computer",
@@ -54,7 +54,7 @@ export const NewRequestTableData = [
 
   {
     id: 4,
-    requestId: "RID-003",
+    schoolName: "chetpet",
     departments: "Pet",
     approximateBudget: "Intermediate ",
     typeOfRequest: "Sports shoe",
@@ -94,8 +94,8 @@ const Tableaction = ({ id }: TableActionType) => {
 
 export const NewRequestConfigurationColumn = [
   {
-    name: "Request Id",
-    selector: (row: NewRequestConfigurationTableColumnsType) => row["requestId"],
+    name: "School Name",
+    selector: (row: NewRequestConfigurationTableColumnsType) => row["schoolName"],
     sortable: true,
   },
   {
@@ -104,7 +104,7 @@ export const NewRequestConfigurationColumn = [
     sortable: true,
   },
   {
-    name: "Approximate Budget",
+    name: "Budget",
     selector: (row: NewRequestConfigurationTableColumnsType) => `${row.approximateBudget}`,
     sortable: true,
   },

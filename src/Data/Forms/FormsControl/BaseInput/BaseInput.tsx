@@ -125,3 +125,4 @@ export const raiseInputStyleSubTitle = [
  export const colorList = ["Red", "Yellow", "Orange", "White", "Black", "Gray ", "Brown", "Purple ", "White"]
  export const departmentdropdown=["Select Department","IT","Transport","Admin"]
  export const LinkDropdown=["Chetpet","Kumbakonam","Avadi","Polachery","MIRS","Irrungatukottai","Tenkasi","Trichy"]
+ export const typeofrequestdropdown=["Computer","Construction","Bus tyre change"," Need Desktop"]

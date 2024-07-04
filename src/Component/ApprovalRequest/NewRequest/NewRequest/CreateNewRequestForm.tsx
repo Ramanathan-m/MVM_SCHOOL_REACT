@@ -1,8 +1,8 @@
 import React from 'react'
 import { Form, Row, Col, FormGroup, Input, Label} from 'reactstrap'
-import {RaiseRequestImage, RaiserequestsApproximateBudget, RaiseRequestDate, RaiseRequestDescription, RaiseRequestRequestId, RaiserequestAdvance, RaiserequestRequest, Raiserequestintermediate, RaiserequestsBasic, RaiserequestsHigh, RaiserequestsLow, RaiserequestsMedium, selectschool, RaiserequestsPriority, Tags, Add, ViewForm, MDepartments } from '../../../../utils/Constant'
+import {RaiseRequestImage, RaiserequestsApproximateBudget, RaiseRequestDate, RaiseRequestDescription,RaiserequestsHigh, RaiserequestsLow, RaiserequestsMedium, RaiserequestsPriority, Tags, MDepartments, RaiserequestRequest } from '../../../../utils/Constant'
 import NewRequestButtonSection from './NewRequestButtonSection'
-import {LinkDropdown, departmentdropdown } from '../../../../Data/Forms/FormsControl/BaseInput/BaseInput'
+import { departmentdropdown, typeofrequestdropdown } from '../../../../Data/Forms/FormsControl/BaseInput/BaseInput'
 import NewRequestMultiSelector from './NewRequestMultiSelector'
 
 const CreateNewRequestForm = () => {
@@ -10,16 +10,6 @@ const CreateNewRequestForm = () => {
     <Form className="theme-form">
       <Row>
         <Col md="8 offset-md-1">
-          <FormGroup>
-            <Row>
-              <Col sm="4">
-                <Label>{RaiseRequestRequestId}</Label>
-              </Col>
-              <Col sm="8">
-                <Input type="text" className="form-control" />
-              </Col>
-            </Row>
-          </FormGroup>
           <FormGroup>
             <Row>
               <Col sm="4">
@@ -67,7 +57,9 @@ const CreateNewRequestForm = () => {
                 <Label>{RaiserequestRequest}</Label>
               </Col>
               <Col sm="8">
-                <Input type="text" className="form-control" />
+              <Input type='select' className="input-air-primary digits" defaultValue={"Select School"}>
+                  {typeofrequestdropdown.map((data, index) => (<option key={index}>{data}</option>))}
+                </Input>              
               </Col>
             </Row>
           </FormGroup>

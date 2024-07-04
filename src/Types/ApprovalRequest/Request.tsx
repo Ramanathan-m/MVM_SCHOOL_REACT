@@ -4,7 +4,7 @@ export interface TableActionType {
   
   export interface NewRequestConfigurationTableColumnsType {
     id: number;
-    requestId:string;
+    schoolName:string;
     departments:string;
     approximateBudget:string;
     typeOfRequest:string;
@@ -15,6 +15,9 @@ export interface TableActionType {
     status:string;
     lastupdated:string;
     action: string;
+  }
+  export interface NewRequestTableTableProduct {
+    images?: string;
   }
 
   export interface PendingRequestConfigurationTableColumnsType {

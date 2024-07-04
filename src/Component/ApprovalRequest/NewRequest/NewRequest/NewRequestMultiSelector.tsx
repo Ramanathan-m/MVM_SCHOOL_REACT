@@ -8,7 +8,7 @@ const NewRequestMultiSelector = () => {
         <div>
             <Form className="theme-form">
                 <div>
-                    <Typeahead options={newrequestmultiselect} multiple clearButton placeholder="Desktop" labelKey="name" id="selectTwo" />
+                    <Typeahead options={newrequestmultiselect} multiple clearButton placeholder="- Select Tags -" labelKey="name" id="selectTwo" />
                 </div>
             </Form>    
         </div>
