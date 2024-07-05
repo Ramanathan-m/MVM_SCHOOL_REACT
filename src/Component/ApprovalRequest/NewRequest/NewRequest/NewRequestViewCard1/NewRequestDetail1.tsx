@@ -7,7 +7,7 @@ import NewRequestCardImage from '../NewRequestViewCard/NewRequestCardImage'
 const NewRequestDetail1 = () => {
   return (
     <div className="card-wrapper border rounded-3 checkbox-checked">
-      <H6 className="sub-title">{"View Details"}</H6>
+      {/* <H6 className="sub-title">{"View Details"}</H6> */}
       
           <div className="form-group row">
             <label className="control-label col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">School Name</label>

@@ -14,13 +14,18 @@
             .file-left {
                 background-color: rgba($primary-color, 0.05);
                 border: 1px solid $light-gray;
-                padding: 18px 22px;
-                border-radius: 5px;
+                padding: 18px 18px;
+                border-radius: 2px;
             }
         }
     }
 }
-
+.folder-files{
+    background-color: rgba($primary-color, 0.05);
+    border: 1px solid $light-gray;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
 .file-sidebar,
 .file-content {
     .card {

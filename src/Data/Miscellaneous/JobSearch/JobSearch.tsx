@@ -332,3 +332,26 @@ export const ApprovalRequest1data  = [
     ribbon: false,
   },
 ]
+export const MyFolderFiles  = [
+  {
+    icons: "folder",
+    title: "Quotation 1",
+    details: "7 Hour ago, 2.0 MB",
+    vendors:"Dell store",
+    color: "primary",
+  },
+  {
+    icons: "folder",
+    title: "Quotation 2",
+    details: "2 Day ago, 3.0 MB",
+    vendors:"HP store",
+    color: "primary",
+  },
+  {
+    icons: "folder",
+    title: "Quotation 3",
+    details: "1 Day ago, 1.9 MB",
+    vendors:"Test store",
+    color: "primary",
+  }
+]

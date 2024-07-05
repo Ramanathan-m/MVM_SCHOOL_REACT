@@ -8,7 +8,7 @@ export interface SearchBarPropsType {
     title: string;
     details: string;
     color: string;
-}[]
+}
 
 export interface DataType{
     myFile:MyFiles[]

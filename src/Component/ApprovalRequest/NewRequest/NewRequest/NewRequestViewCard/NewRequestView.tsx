@@ -3,6 +3,7 @@ import {  Row, Col, Card, CardBody } from 'reactstrap'
 import CommonCardHeader from '../../../../../CommonElements/CommonCardHeader/CommonCardHeader'
 import NewRequestDetail from './NewRequestDetail'
 import NewRequestApproval from './NewRequestApproval'
+import NewRequestApproval1 from '../NewRequestViewCard1/NewRequestApproval1'
 
 const NewRequestView = () => {
     return (
@@ -12,7 +13,7 @@ const NewRequestView = () => {
             <CardBody>
               <Row className="g-3">
               <NewRequestDetail/>
-              <NewRequestApproval/>
+              <NewRequestApproval1/>
               </Row>
             </CardBody>
           </Card>
