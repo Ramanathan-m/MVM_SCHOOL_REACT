@@ -182,7 +182,7 @@ export const TypeOfRequest="Bus tyre Change"
 export const VRPriority="Medium"
 export const Image="Image"
 export const VRDescription="In order to ensure the safety and reliability of school transportation, it is essential to establish clear guidelines for the selection and maintenance of tires used in school vehicles.Bus no:6656 Need to change the tyre. "
-export const VRStatus="Waiting For Commite Approval"
+export const VRStatus="Waiting For Commite Approval(Due on 15 days)"
 
 
 

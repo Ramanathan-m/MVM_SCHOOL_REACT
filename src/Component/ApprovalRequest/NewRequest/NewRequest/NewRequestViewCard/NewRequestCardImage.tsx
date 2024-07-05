@@ -13,7 +13,7 @@ const NewRequestCardImage = () => {
           <Item original={dynamicImage(item)} width="802" height="476">
             {({ ref, open }) => (
               <Link to={Href} onClick={open}>
-                <img className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1" ref={ref} src={dynamicImage(item)} alt="thumbnail" />
+                <img className="img-thumbnail border rounded" ref={ref} src={dynamicImage(item)} alt="thumbnail" />
               </Link>
             )}
           </Item>

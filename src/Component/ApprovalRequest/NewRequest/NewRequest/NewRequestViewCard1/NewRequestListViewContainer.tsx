@@ -17,7 +17,6 @@ const NewRequestListViewContainer = () => {
                 </div>
               </Col>
               <Col xl="9" className="xl-60 box-col-12">
-                <NewRequestApproval1 />
               </Col>
             </Row>
           </Container>

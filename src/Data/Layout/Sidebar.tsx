@@ -40,7 +40,7 @@ export const MenuList: MenuItem[] = [
         active: false,
         children: [
           // { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Raise/View Requests", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/approvalrequest/createnewrequest`, title: "Raise/View Requests", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Raise/View Requests", type: "link" },
           { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequests`, title: "Pending Requests", type: "link" },
           { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequests`, title: "Old Requests", type: "link" },
           { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequests`, title: "Cancelled Requests", type: "link" },

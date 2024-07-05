@@ -284,7 +284,7 @@ export const ApprovalRequest1data  = [
     badgeType: "success",
     badgeValue: "Approved",
     approvedOn: "12-05-2024 5:43 PM",
-    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment.",
     ribbon: false,
   },
   {
@@ -295,7 +295,7 @@ export const ApprovalRequest1data  = [
     badgeType: "warning",
     badgeValue: "Pending",
     approvedOn: "13-05-2024 4:23 PM",
-    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.",
     ribbon: false,
   },
   {
@@ -306,7 +306,7 @@ export const ApprovalRequest1data  = [
     badgeType: "info",
     badgeValue: "Hold",
     approvedOn: "12-05-2024 7:43 PM",
-    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. ",
     ribbon: false,
   },
   {
@@ -317,7 +317,7 @@ export const ApprovalRequest1data  = [
     badgeType: "success",
     badgeValue: "Approved",
     approvedOn: "12-05-2024 5:20 PM",
-    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.",
     ribbon: false,
   },
   {
@@ -328,7 +328,7 @@ export const ApprovalRequest1data  = [
     badgeType: "danger",
     badgeValue: "Pending",
     approvedOn: "12-05-2024 5:43 PM",
-    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.",
+    description: "The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. ",
     ribbon: false,
   },
 ]
