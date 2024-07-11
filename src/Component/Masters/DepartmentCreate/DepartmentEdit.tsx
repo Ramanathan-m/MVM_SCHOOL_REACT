@@ -6,7 +6,7 @@ import EditNewDepartmentForm from './EditNewDepartmentForm'
 
 const DepartmentEditContainer = () => {
   return (
-<>
+    <>
       <Breadcrumbs mainTitle={ProjectCreates} parent={Project} />
       <Container fluid>
         <Row>
@@ -19,7 +19,8 @@ const DepartmentEditContainer = () => {
           </Col>
         </Row>
       </Container>
-    </>  )
+    </>
+  )
 }
 
 export default DepartmentEditContainer

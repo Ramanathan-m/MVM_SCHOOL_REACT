@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { Card, CardBody, Col } from 'reactstrap';
 import DataTable from "react-data-table-component";
 import { VendorTableData, VendorsConfigurationColumn } from './Vendors';
-import VendorListHeadContainer from '../../../../Component/Masters/VendorList/VendorListHead';
+import VendorListHeadContainer from '../../../../Component/Masters/Vendors/VendorList/VendorListHead';
 
 
 const VendorConfigurationTable = () => {

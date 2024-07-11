@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Row, Col, CardBody, Container } from 'reactstrap'
 import { Project, ProjectCreates } from '../../../utils/Constant'
 import Breadcrumbs from '../../../CommonElements/Breadcrumbs/Breadcrumbs'
-import CreateNewSchoolForm from '../../../Component/Masters/SchoolCreate/CreateNewSchoolForm'
+import CreateNewSchoolForm from './CreateNewSchoolForm'
 
 
 const SchoolCreate = () => {

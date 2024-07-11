@@ -11,7 +11,6 @@ export const MenuList: MenuItem[] = [
         title: "Dashboards",
         id: 1,
         icon: "home",
-        type: "sub",
         lanClass: "lan-2",
         path: `${process.env.PUBLIC_URL}/dashboard/default`, 
         active:false,
@@ -33,17 +32,24 @@ export const MenuList: MenuItem[] = [
       },
       
       {
-        title: "New Request",
+        title: "Requests",
         id: 3,
         icon: "layout",
         type: "sub",
         active: false,
         children: [
           // { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Raise/View Requests", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Raise/View Requests", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequests`, title: "Pending Requests", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequests`, title: "Old Requests", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequests`, title: "Cancelled Requests", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "New Requests", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequests`, title: "Pending Requests", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequests`, title: "Old Requests", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequests`, title: "Cancelled Requests", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/schooladminapproved`, title: "school Admin Approved", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Pending Request", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequests`, title: "Cancelled Request", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/quotedrequest`, title: "Quoted Request", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/committeememberapprovedpage`, title: "Committee Member Approved  ", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/inprogressrequest`, title: "Inprogress request", type: "link" },
+          { path: `${process.env.PUBLIC_URL}/approvalrequest/completedrequest`, title: "Completed request", type: "link" },
         ]
       },
       { 
@@ -64,7 +70,7 @@ export const MenuList: MenuItem[] = [
       },
       { 
         id: 6, 
-        path: `${process.env.PUBLIC_URL}/authentication/loginsimple`, 
+        path: `${process.env.PUBLIC_URL}/login`, 
         icon: "support-tickets", 
         type: "sub", 
         active: false, 

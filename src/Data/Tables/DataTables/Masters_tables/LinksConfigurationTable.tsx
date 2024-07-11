@@ -5,7 +5,7 @@ import DataTable from "react-data-table-component";
 import SchoolListHead from '../../../../Component/Masters/SchoolList/SchoolListHead';
 import { VendorTableData, VendorsConfigurationColumn } from './Vendors';
 import { LinksConfigurationColumn, LinksTableData } from './Links';
-import LinkListHeadContainer from '../../../../Component/Masters/LinksList/LinkListHead';
+import LinkListHeadContainer from '../../../../Component/Masters/Links/LinksList/LinkListHead';
 
 
 const LinksConfigurationTable = () => {

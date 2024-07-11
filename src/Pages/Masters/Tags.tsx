@@ -1,11 +1,11 @@
 import React from 'react'
-// import { Links } from '../../Component/Masters/Links'
-// import { Tags } from '../Masters/'
+import Tag from '../../Component/Masters/Tags'
+
 
 const Tags = () => {
   return (
     <div className='page-body'>
-     {/* <Mtags/> */}
+     <Tag/>
     </div>
   )
 }

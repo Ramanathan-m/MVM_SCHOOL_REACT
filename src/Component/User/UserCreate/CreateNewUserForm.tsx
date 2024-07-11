@@ -101,7 +101,7 @@ const CreateNewUserForm = () => {
               </Col>
               <Col sm="8" className='d-flex gap-2'>
                 <FormGroup check>
-                  <Input className="form-check-input" id="RaiserequestsBasic" type="radio" name="RaiserequestsApproximateBudget" />
+                  <Input className="form-check-input" id="RaiserequestsBasic" type="radio" name="RaiserequestsApproximateBudget" checked/>
                   <Label className="form-check-label mb-0" for='RaiserequestsBasic'>{Active}</Label>
                 </FormGroup>
                 <FormGroup check>

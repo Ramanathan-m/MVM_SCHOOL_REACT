@@ -126,3 +126,5 @@ export const raiseInputStyleSubTitle = [
  export const departmentdropdown=["Select Department","IT","Transport","Admin"]
  export const LinkDropdown=["Chetpet","Kumbakonam","Avadi","Polachery","MIRS","Irrungatukottai","Tenkasi","Trichy"]
  export const typeofrequestdropdown=["Computer","Construction","Bus tyre change"," Need Desktop"]
+ export const categorydropdown=["Computer","Construction","Bus tyre change"," Need Desktop"]
+ export const Quatationdropdown=["-Select Vendor-","DELL","HP","APPLE"]

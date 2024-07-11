@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkCreateContainer from '../../../Component/Masters/LinksCreate/LinkCreate';
+import LinkCreateContainer from '../../../Component/Masters/Links/LinksCreate/LinkCreate';
 
 
 const VendorCreate = () => {

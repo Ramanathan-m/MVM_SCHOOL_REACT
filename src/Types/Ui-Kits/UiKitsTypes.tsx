@@ -145,6 +145,8 @@ interface SpanType {
   export interface StaticModalToggleProp {
     staticModalToggle: () => void;
   }
+
+
   interface DataProp {
     className?: string;
     text: string;

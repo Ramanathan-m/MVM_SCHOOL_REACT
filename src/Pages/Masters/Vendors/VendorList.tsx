@@ -1,5 +1,5 @@
 import React from 'react'
-import VendorListHeadContainer from '../../../Component/Masters/VendorList/VendorListHead'
+import VendorListHeadContainer from '../../../Component/Masters/Vendors/VendorList/VendorListHead'
 
 const VendorList = () => {
   return (

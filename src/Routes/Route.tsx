@@ -148,6 +148,44 @@ import SchoolViewCardPage from '../Pages/Masters/Schools/SchoolViewCardPage'
 import DepartmentViewCardPage from '../Pages/Masters/Departments/DepartmentViewCard'
 import DepartrmentEditPage from '../Pages/Masters/Departments/DepartrmentEdit'
 import NewRequestViewPage1 from '../Pages/ApprovalRequests/NewRequest/NewRequestViewPage1'
+import NewrequestEditFormPage from '../Pages/ApprovalRequests/NewRequest/NRpages/NewrequestEditFormPage'
+import NRBusFrontTyreChangePage from '../Pages/ApprovalRequests/NewRequest/NRpages/NRBusFrontTyreChangePage'
+import NewRequestCancelFnPage from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestCancelFnPage'
+import NewRequestMoreInfoRequestPage from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestMoreInfoRequestPage'
+import NewRequestQuotationPage from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestQuotationPage'
+import NewRequestSelectQuotePage from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestSelectQuotePage'
+import NRQuotationOnePage from '../Pages/ApprovalRequests/NewRequest/NRpages/NRQuotationOnePage'
+import NRQuotationTwoPage from '../Pages/ApprovalRequests/NewRequest/NRpages/NRQuotationTwoPage'
+import NRQuotationThreePage from '../Pages/ApprovalRequests/NewRequest/NRpages/NRQuotationThreePage'
+import TagsCreate from '../Pages/Masters/Tags/TagsCreate'
+import TagsViewPage from '../Pages/Masters/Tags/TagsViewPage'
+import TagsEditFormPage from '../Pages/Masters/Tags/TagsEditFormPage'
+import VendorViewPage from '../Pages/Masters/Vendors/VendorViewPage'
+import VendorEditFormPage from '../Pages/Masters/Vendors/VendorEditFormPage'
+import LinksViewCard from '../Pages/Masters/Links/LinksViewCard'
+import LinksEdit from '../Pages/Masters/Links/LinksEdit'
+import PendingRequestEditForm from '../Pages/ApprovalRequests/PendingRequest/PendingRequestEditForm'
+import PendingRequestView from '../Pages/ApprovalRequests/PendingRequest/PendingRequestView'
+import OldRequestEditForm from '../Pages/ApprovalRequests/OldReqest/OldRequestEditForm'
+import OldRequestView from '../Pages/ApprovalRequests/OldReqest/OldRequestView'
+import CancelledRequestView from '../Pages/ApprovalRequests/Cancelledrequest/CancelledRequestView'
+import CancelledRequestEdit from '../Pages/ApprovalRequests/Cancelledrequest/CancelledRequestEdit'
+import UserView from '../Pages/User/UserView'
+import UserEdit from '../Pages/User/UserEdit'
+import NewRequestCancel from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestCancel'
+import NewRequestUpdate from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestUpdate'
+import NewRequestViewQuotation from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestViewQuotation'
+import NewRequestUploadQuote from '../Pages/ApprovalRequests/NewRequest/NRpages/NewRequestUploadQuote'
+import NewRequstViewCardPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/NewRequstViewCardPage'
+import SchoolAdminApprovedPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/SchoolAdminApprovedPage'
+import SchoolAdminApprovedViewCardPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/SchoolAdminApprovedViewCardPage'
+import CommitteeMemberApprovedPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/CommitteeMemberApprovedPage'
+import CommitteeMemberApprovedViewCardPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/CommitteeMemberApprovedViewCardPage'
+import InprogressRequestViewCardPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/InprogressRequestViewCardPage'
+import InprogressRequest from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/InprogressRequestPage'
+import CompletedRequest from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/CompltedRequestPage'
+import CompletedRequestViewCardPage from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/CompletedRequestViewCardPage '
+import QuotedRequest from '../Pages/ApprovalRequests/NewRequest/NewRequestPage/QuotedRequestPage'
 
 
 const Routes = [
@@ -170,10 +208,18 @@ const Routes = [
     // vendor
     { path: `${process.env.PUBLIC_URL}/masters/vendors`, Component: <Vendors />},
     { path: `${process.env.PUBLIC_URL}/masters/vendor/createnewVendors`, Component: <VendorCreate />},
-
+    { path: `${process.env.PUBLIC_URL}/masters/vendor/viewVendors`, Component: <VendorViewPage />},
+    { path: `${process.env.PUBLIC_URL}/masters/vendor/editVendors`, Component: <VendorEditFormPage />},
+    // tags
     { path: `${process.env.PUBLIC_URL}/masters/tags`, Component: <Tags />},
+    { path: `${process.env.PUBLIC_URL}/masters/tags/createnewtags`, Component: <TagsCreate />},
+    { path: `${process.env.PUBLIC_URL}/masters/tags/Viewtags`, Component: <TagsViewPage />},
+    { path: `${process.env.PUBLIC_URL}/masters/tags/edittagsform`, Component: <TagsEditFormPage />},
+    // links
     { path: `${process.env.PUBLIC_URL}/masters/links`, Component: <Links />},
     { path: `${process.env.PUBLIC_URL}/masters/link/createnewlink`, Component: <LinkCreate />},
+    { path: `${process.env.PUBLIC_URL}/masters/link/viewlinks`, Component: <LinksViewCard />},
+    { path: `${process.env.PUBLIC_URL}/masters/link/Editlinks`, Component: <LinksEdit />},
 
 
     // ApprovalRequest
@@ -181,16 +227,52 @@ const Routes = [
     { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequests`, Component: <PendingRequestsContainer />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequests`, Component: <OldRequestsContainer />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequests`, Component: <CancelledRequestsContainer />},
-    
     { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequest`, Component: <NewRequestViewPage />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequest1`, Component: <NewRequestViewPage1 />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/createnewrequest`, Component: <NewRequestCreate />},
     { path: `${process.env.PUBLIC_URL}/approvalrequest/editnewrequest`, Component: <NewRequestEdit />},
-
-
-
+    // Static Pages
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequesteditform`, Component: <NewrequestEditFormPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequesttyrechange`, Component: <NRBusFrontTyreChangePage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestcancel`, Component: <NewRequestCancel />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestcancelfn`, Component: <NewRequestCancelFnPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestupdatehistory`, Component: <NewRequestUpdate />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestmoreinfo`, Component: <NewRequestMoreInfoRequestPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestquotation`, Component: <NewRequestQuotationPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestviewquotation`, Component: <NewRequestViewQuotation />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestselectedquotation`, Component: <NewRequestSelectQuotePage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestuploadquote`, Component: <NewRequestUploadQuote />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestquotationone`, Component: <NRQuotationOnePage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestquotationtwo`, Component: <NRQuotationTwoPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/viewrequestquotationthree`, Component: <NRQuotationThreePage />},
+    // RaiseNewRequest
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/newrequestviewcard`, Component: <NewRequstViewCardPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/schooladminapproved`, Component: <SchoolAdminApprovedPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/SchoolAdminApprovedViewCard`, Component: <SchoolAdminApprovedViewCardPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/committeememberapprovedpage`, Component: <CommitteeMemberApprovedPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/committeememberapprovedviewcard`, Component: <CommitteeMemberApprovedViewCardPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/inprogressrequest`, Component: <InprogressRequest />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/inprogressrequestviecard`, Component: <InprogressRequestViewCardPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/completedrequest`, Component: <CompletedRequest />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/completedrequestviecard`, Component: <CompletedRequestViewCardPage />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/quotedrequest`, Component: <QuotedRequest />},
+    
+    // pendingrequest
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequesteditform`, Component: <PendingRequestEditForm />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/pendingrequestviewcard`, Component: <PendingRequestView />},
+    // oldrequest
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequestview`, Component: <OldRequestView />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/oldrequestedit`, Component: <OldRequestEditForm />},
+    // cancelledrequest
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequestview`, Component: <CancelledRequestView />},
+    { path: `${process.env.PUBLIC_URL}/approvalrequest/cancelledrequestedit`, Component: <CancelledRequestEdit />},
+   
+   
     // otherpages
     { path: `${process.env.PUBLIC_URL}/user/users`, Component: <Users/>},
+    { path: `${process.env.PUBLIC_URL}/user/userview`, Component: <UserView/>},
+    { path: `${process.env.PUBLIC_URL}/user/useredit`, Component: <UserEdit/>},
+
     { path: `${process.env.PUBLIC_URL}/profile/profile`, Component: <ProfileContainer />},
     { path: `${process.env.PUBLIC_URL}/user/createnewuser`, Component: <UserCreate />},
 

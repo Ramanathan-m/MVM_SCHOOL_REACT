@@ -82,10 +82,25 @@ export const MAddSchools = "Add Schools";
 export const MAddDepartments = "Add Departments";
 export const MAddVendors = "Add Vendors";
 export const MAddLinks = "Add Links";
+export const AddTags = "Add Tags";
 export const AddRequest = "Create New Request";
 export const PendingRequest = "Add Pending Request";
 export const OldRequest = "Add Old Request";
 export const CancelledRequest = "Add Cancelled Request";
+
+// VendorFormDetails
+export const VendorName="Vendor Name"
+export const VendorContactPerson="Contact Person"
+export const VendorAddress="Address"
+export const VendorState="State"
+export const VendorCity="City"
+export const VendorPincode="Pin code"
+export const VendorEmailid="Email id"
+export const VendorFormPhoneNumber="Phone Number"
+export const VendorGstNumber="Gst Number"
+export const VendorPANNumber="PAN Number"
+export const VendorServices="Services"
+
 
 // addschool
 export const SchoolName = "School Name";
@@ -114,8 +129,13 @@ export const ViewCardCancel = "Cancel";
 export const OUser = "User";
 export const OUsers = "Users";
 export const OProfile = "Profile";
-export const AddNewUser = "Add New User";
+export const ChangePassword = "Change Password";
+export const EnterNewPassword = "Enter the New Password";
+export const EnterConfrimPassword = "Enter the Confrim Password";
 
+// export const OProfile = "Profile";
+
+export const AddNewUser = "Add New User";
 export const PName = "Girish";
 export const PEmailId = "girish@gmail.com";
 export const PMobileNumber = "8875362510";
@@ -147,7 +167,7 @@ export const SearchSchool="School"
 
 // Raise Request 
 export const RaiseRequestRequestId="Request Id";
-export const RaiserequestRequest="Type of Request"
+export const RaiserequestRequest="Request"
 export const RaiseRequestDescription="Description"
 export const RaiseRequestDate="Due Date"
 export const RaiseRequestTags="tag"
@@ -176,18 +196,31 @@ export const InActive="InActive"
 // tabledataforraise/viewrequest
 export const Chetpet="Chetpet"
 export const Department="Transport"
-export const Budget="5,000"
-export const DueDate="12-07-2024"
+export const Budget="17,000"
+export const DueDate="19-07-2024"
 export const TypeOfRequest="Bus tyre Change"
 export const VRPriority="Medium"
 export const Image="Image"
 export const VRDescription="In order to ensure the safety and reliability of school transportation, it is essential to establish clear guidelines for the selection and maintenance of tires used in school vehicles.Bus no:6656 Need to change the tyre. "
-export const VRStatus="Waiting For Commite Approval(Due on 15 days)"
+export const VRStatus="Waiting For School Head "
+export const VRStatusWithDate="(Due on 15 days)"
 
-
-
-
-
+//QuatationModal
+export const QuatationVendorName ="Vendor Name"
+export const QuatationPrice ="Price" 
+export const QuatationProduct="Request" 
+export const QuatationDescription ="Description"
+export const QuatationFile ="File"
+// Committee member selected Qoute
+export const RequestedVendorName="Murali"
+export const RequestedPrice="15000"
+export const RequestedProduct="Bus Front Tyre"
+export const RequestedDescription="In order to ensure the safety and reliability of school transportation, it is essential to establish clear guidelines for the selection and maintenance of tires used in school vehicles.Bus no:6656 Need to change the tyre."
+export const RequestedFile="Quotation1.pdf"
+// Quotation
+export const Quatation1="Quatation 1"
+export const Quatation2="Quatation 2"
+export const Quatation3="Quatation 3"
 
 //Datepicker
 export const CalendarDefault = "Default calendar";

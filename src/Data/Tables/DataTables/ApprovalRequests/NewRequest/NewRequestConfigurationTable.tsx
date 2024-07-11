@@ -3,6 +3,7 @@ import { Card, CardBody, Col } from 'reactstrap';
 import DataTable from "react-data-table-component";
 import { NewRequestConfigurationColumn, NewRequestTableData } from './NewRequest';
 import NewRequestListHeadContainer from '../../../../../Component/ApprovalRequest/NewRequest/NewRequestHeader/NewRequestListHead';
+import NRStaticTable from '../../../../../Component/ApprovalRequest/NewRequest/NewRequest/NewRequestStaticTable.tsx/NRStaticTable';
 
 
 const NewRequestConfigurationTable = () => {
@@ -30,7 +31,7 @@ const NewRequestConfigurationTable = () => {
         <Card>
           <CardBody>
             <div className="table-responsive">
-              <DataTable columns={NewRequestConfigurationColumn} data={filteredItems} pagination subHeaderComponent={subHeaderComponentMemo} highlightOnHover striped persistTableHead />
+              <NRStaticTable />
             </div>
           </CardBody>
         </Card>

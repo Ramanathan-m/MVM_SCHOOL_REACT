@@ -9,7 +9,7 @@ const RoundedPillsWithIconsCart = () => {
     <Col sm="12" xl="6">
       <Card>
         <CardHeaderCommon title={RoundedPillsWithIcons} span={roundedPillData} />
-        <CommonTagAndPillsCardBody number={roundedPillContext} />
+        <CommonTagAndPillsCardBody number={roundedPillContext}/>
       </Card>
     </Col>
   )

@@ -29,23 +29,23 @@ const Login = () => {
           <div className="login-card login-dark">
             <div>
               <div>
-                <Link className="logo text-center" to={Href}>
+                <Link className="logo text-center  bg-primary rounded-2 p-1 m-1" to={Href}>
                   <Image className="img-fluid for-dark mx-auto" src={dynamicImage("logo/mvm-logo.png")} alt="looginpage" />
-                  <Image className="img-fluid for-light mx-auto" src={dynamicImage("logo/logo_dark.png")} alt="looginpage" />
+                  <Image className="img-fluid for-light mx-auto" src={dynamicImage("logo/mvm-logo.png")} alt="looginpage" />
                 </Link>
               </div>
               <div className="login-main">
                 <Form className="theme-form" onSubmit={(e) => SimpleLoginHandle(e)} >
                   <H4>{SignInAccount}</H4>
-                  <P>{"Enter your email & password to login"}</P>
+                  {/* <P>{"Enter your email & password to login"}</P> */}
                   <FormGroup>
                     <Label className="col-form-label">{EmailAddress}</Label>
-                    <Input type="email" required placeholder="Test@gmail.com" value={email} name="email" onChange={(event) => setEmail(event.target.value)}  />
+                    <Input type="email" required placeholder="Enter the Email" value={email} name="email" onChange={(event) => setEmail(event.target.value)}  />
                   </FormGroup>
                   <FormGroup>
                     <Label className="col-form-label">{Password}</Label>
                     <div className="form-input position-relative">
-                      <Input type={show ? "text" : "password"} placeholder="*********"  onChange={(event) => setPassword(event.target.value)} value={password} name="password"/>
+                      <Input type={show ? "text" : "password"} placeholder="Enter the Password"  onChange={(event) => setPassword(event.target.value)} value={password} name="password"/>
                       <div className="show-hide" onClick={() => setShow(!show)}>
                         <span className="show"> </span>
                       </div>
@@ -67,8 +67,6 @@ const Login = () => {
                       </Btn>
                     </div>
                   </FormGroup>
-                  <H6 className="text-muted mt-4 or">{SignInWith}</H6>
-                  <SocialApp />
                   <P className="mt-4 mb-0 text-center">
                     {DoNotAccount}
                     <Link className="ms-2" to={`${process.env.PUBLIC_URL}/authentication/registersimple`} >

@@ -1,5 +1,5 @@
 import React from 'react'
-import VendorCreateContainer from '../../../Component/Masters/VendorCreate/VendorCreate';
+import VendorCreateContainer from '../../../Component/Masters/Vendors/VendorCreate/VendorCreate'
 
 
 const VendorCreate = () => {

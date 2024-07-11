@@ -4,6 +4,7 @@ import { Card, CardBody, Container, Row } from 'reactstrap';
 import  { Href, OProfile, PChangePassword, PEmailId, PMobileNumber, PName, PUserName }  from '../../utils/Constant';
 import { Link } from 'react-router-dom';
 import { H4 } from '../../AbstractElements';
+import ChangePasswordModal from './ChangePasswordModal';
 
 const Profile = () => {
     return (
@@ -39,7 +40,8 @@ const Profile = () => {
                       <div className="form-group row mt-3">
                         <label className="control-label col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12"></label>
                         <div className="col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <Link to={  Href}>{PChangePassword}</Link>
+                          {/* <Link to={  Href}>{PChangePassword}</Link> */}
+                          <ChangePasswordModal/>
                         </div>
                       </div>
                     </div>

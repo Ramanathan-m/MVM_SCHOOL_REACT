@@ -25,12 +25,12 @@ const TableAction = ({ id }: TableActionType) => {
   return (
     <UL className="action simple-list flex-row" id={id}>
       <div className="view">
-        <Link to={Href}>
+        <Link to={`${process.env.PUBLIC_URL}/masters/vendor/viewVendors`}>
           <i className="fa fa-eye"></i>
         </Link>
       </div>
       <div className="edit">
-        <Link to={Href}>
+        <Link to={`${process.env.PUBLIC_URL}/masters/vendor/editVendors`}>
           <i className="icon-pencil-alt" />
         </Link>
       </div>

@@ -43,6 +43,16 @@ export interface TableActionType {
       action: string;
     }
 
+    export interface TagsConfigurationTableColumnTypes{
+      id:number;
+      name:string;
+      schoolName:string;
+      department:string;
+      emailId:string;
+      PhoneNumber:number;
+      action:string;
+    }
+
     export interface NewRequestsConfigurationTableColumnsType{
       id: number;
       schoolName: string;

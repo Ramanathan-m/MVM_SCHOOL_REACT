@@ -1,10 +1,10 @@
 import React from 'react'
-import DepartmentViewCardContainer from '../../../Component/Masters/DepartmentCreate/DepartmentViewCard'
+import DepartmentView from '../../../Component/Masters/DepartmentCreate/DepartmentView'
 
 const DepartmentViewCardPage = () => {
   return (
     <div className='page-body'>
-    <DepartmentViewCardContainer   />
+    <DepartmentView   />
   </div>
   )
 }

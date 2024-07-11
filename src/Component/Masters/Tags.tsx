@@ -1,7 +1,8 @@
 import React from 'react'
 import Breadcrumbs from '../../CommonElements/Breadcrumbs/Breadcrumbs';
 import { Container, Row } from 'reactstrap';
-import { MTags, Masters } from '../../utils/Constant';
+import { Masters, MTags } from '../../utils/Constant';
+import TagsConfigurationTable from '../../Data/Tables/DataTables/Masters_tables/Tags/TagsConfigurationTable';
 
 
 export const Tags = () => {
@@ -10,10 +11,10 @@ export const Tags = () => {
           <Breadcrumbs mainTitle={MTags} parent={Masters} />
           <Container fluid>
             <Row>
-              {/* <MTags/> */}
-
+              <TagsConfigurationTable/>
             </Row>
           </Container>
         </>
       );
 }
+export default Tags
